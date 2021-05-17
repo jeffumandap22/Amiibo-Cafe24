@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0489E61DBB24271F2D6458D7 /* Pods_Cafe24_Amiibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82AA1613F5F8F1E3FDE9A4FF /* Pods_Cafe24_Amiibo.framework */; };
+		11A6207A2652367700E297FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A620792652367700E297FC /* AppDelegate.swift */; };
+		11A6207C2652367700E297FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6207B2652367700E297FC /* SceneDelegate.swift */; };
+		11A6207E2652367700E297FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6207D2652367700E297FC /* ViewController.swift */; };
+		11A620812652367700E297FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A6207F2652367700E297FC /* Main.storyboard */; };
+		11A620832652367900E297FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A620822652367900E297FC /* Assets.xcassets */; };
+		11A620862652367900E297FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A620842652367900E297FC /* LaunchScreen.storyboard */; };
+		11A620912652384800E297FC /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A620902652384800E297FC /* Character.swift */; };
+		11A620962652399400E297FC /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A620952652399400E297FC /* Parser.swift */; };
+		11A620E626524FAE00E297FC /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A620E426524FAE00E297FC /* CharacterCell.swift */; };
+		11A620E726524FAE00E297FC /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A620E526524FAE00E297FC /* CharacterCell.xib */; };
+		11A620EC265262F900E297FC /* UIImage+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A620EB265262F900E297FC /* UIImage+Download.swift */; };
+		11A620F22652666C00E297FC /* CharacterImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A620F02652666C00E297FC /* CharacterImageViewController.swift */; };
+		11A620F32652666C00E297FC /* CharacterImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A620F12652666C00E297FC /* CharacterImageViewController.xib */; };
+		11A620FB265271A900E297FC /* SearchOnGoogleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A620F9265271A900E297FC /* SearchOnGoogleViewController.swift */; };
+		11A620FC265271A900E297FC /* SearchOnGoogleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A620FA265271A900E297FC /* SearchOnGoogleViewController.xib */; };
+		11A621092652807700E297FC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 11A621082652807700E297FC /* .swiftlint.yml */; };
+		11A621122652877000E297FC /* Cafe24_AmiiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A621112652877000E297FC /* Cafe24_AmiiboTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11A621142652877000E297FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11A6206E2652367700E297FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11A620752652367700E297FC;
+			remoteInfo = "Cafe24-Amiibo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11A620762652367700E297FC /* Cafe24-Amiibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cafe24-Amiibo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A620792652367700E297FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11A6207B2652367700E297FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		11A6207D2652367700E297FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11A620802652367700E297FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11A620822652367900E297FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11A620852652367900E297FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11A620872652367900E297FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11A620902652384800E297FC /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		11A620952652399400E297FC /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		11A620E426524FAE00E297FC /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		11A620E526524FAE00E297FC /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
+		11A620EB265262F900E297FC /* UIImage+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Download.swift"; sourceTree = "<group>"; };
+		11A620F02652666C00E297FC /* CharacterImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterImageViewController.swift; sourceTree = "<group>"; };
+		11A620F12652666C00E297FC /* CharacterImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterImageViewController.xib; sourceTree = "<group>"; };
+		11A620F9265271A900E297FC /* SearchOnGoogleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOnGoogleViewController.swift; sourceTree = "<group>"; };
+		11A620FA265271A900E297FC /* SearchOnGoogleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchOnGoogleViewController.xib; sourceTree = "<group>"; };
+		11A621082652807700E297FC /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		11A6210F2652877000E297FC /* Cafe24-AmiiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cafe24-AmiiboTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A621112652877000E297FC /* Cafe24_AmiiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe24_AmiiboTests.swift; sourceTree = "<group>"; };
+		11A621132652877000E297FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176C2E963D9FC74EC012CCD0 /* Pods-Cafe24-Amiibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafe24-Amiibo.debug.xcconfig"; path = "Target Support Files/Pods-Cafe24-Amiibo/Pods-Cafe24-Amiibo.debug.xcconfig"; sourceTree = "<group>"; };
+		186D78F26D7AB8B62CE47CE4 /* Pods-Cafe24-Amiibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafe24-Amiibo.release.xcconfig"; path = "Target Support Files/Pods-Cafe24-Amiibo/Pods-Cafe24-Amiibo.release.xcconfig"; sourceTree = "<group>"; };
+		82AA1613F5F8F1E3FDE9A4FF /* Pods_Cafe24_Amiibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafe24_Amiibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11A620732652367700E297FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0489E61DBB24271F2D6458D7 /* Pods_Cafe24_Amiibo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11A6210C2652877000E297FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11A6206D2652367700E297FC = {
+			isa = PBXGroup;
+			children = (
+				11A620782652367700E297FC /* Cafe24-Amiibo */,
+				11A621102652877000E297FC /* Cafe24-AmiiboTests */,
+				11A620772652367700E297FC /* Products */,
+				9B1B7F38A815D92951543A10 /* Pods */,
+				AC53C3A025F5486848E862AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11A620772652367700E297FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11A620762652367700E297FC /* Cafe24-Amiibo.app */,
+				11A6210F2652877000E297FC /* Cafe24-AmiiboTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11A620782652367700E297FC /* Cafe24-Amiibo */ = {
+			isa = PBXGroup;
+			children = (
+				11A620EE2652639D00E297FC /* Extension */,
+				11A6208F2652381800E297FC /* Model */,
+				11A6209926523DC400E297FC /* View */,
+				11A620942652397D00E297FC /* ViewModel */,
+				11A6208E2652380800E297FC /* Delegates */,
+				11A620822652367900E297FC /* Assets.xcassets */,
+				11A620872652367900E297FC /* Info.plist */,
+				11A621082652807700E297FC /* .swiftlint.yml */,
+			);
+			path = "Cafe24-Amiibo";
+			sourceTree = "<group>";
+		};
+		11A6208E2652380800E297FC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				11A620792652367700E297FC /* AppDelegate.swift */,
+				11A6207B2652367700E297FC /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		11A6208F2652381800E297FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11A620902652384800E297FC /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11A620942652397D00E297FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11A620952652399400E297FC /* Parser.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11A6209926523DC400E297FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11A620842652367900E297FC /* LaunchScreen.storyboard */,
+				11A6207F2652367700E297FC /* Main.storyboard */,
+				11A6207D2652367700E297FC /* ViewController.swift */,
+				11A620E926524FB800E297FC /* Cell */,
+				11A620F02652666C00E297FC /* CharacterImageViewController.swift */,
+				11A620F12652666C00E297FC /* CharacterImageViewController.xib */,
+				11A620F9265271A900E297FC /* SearchOnGoogleViewController.swift */,
+				11A620FA265271A900E297FC /* SearchOnGoogleViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11A620E926524FB800E297FC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				11A620E426524FAE00E297FC /* CharacterCell.swift */,
+				11A620E526524FAE00E297FC /* CharacterCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		11A620EE2652639D00E297FC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				11A620EB265262F900E297FC /* UIImage+Download.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		11A621102652877000E297FC /* Cafe24-AmiiboTests */ = {
+			isa = PBXGroup;
+			children = (
+				11A621112652877000E297FC /* Cafe24_AmiiboTests.swift */,
+				11A621132652877000E297FC /* Info.plist */,
+			);
+			path = "Cafe24-AmiiboTests";
+			sourceTree = "<group>";
+		};
+		9B1B7F38A815D92951543A10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				176C2E963D9FC74EC012CCD0 /* Pods-Cafe24-Amiibo.debug.xcconfig */,
+				186D78F26D7AB8B62CE47CE4 /* Pods-Cafe24-Amiibo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC53C3A025F5486848E862AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82AA1613F5F8F1E3FDE9A4FF /* Pods_Cafe24_Amiibo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11A620752652367700E297FC /* Cafe24-Amiibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11A6208A2652367900E297FC /* Build configuration list for PBXNativeTarget "Cafe24-Amiibo" */;
+			buildPhases = (
+				84AF62E41B674209198C93C4 /* [CP] Check Pods Manifest.lock */,
+				11A620722652367700E297FC /* Sources */,
+				11A620732652367700E297FC /* Frameworks */,
+				11A620742652367700E297FC /* Resources */,
+				11A6210426527CE800E297FC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cafe24-Amiibo";
+			productName = "Cafe24-Amiibo";
+			productReference = 11A620762652367700E297FC /* Cafe24-Amiibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11A6210E2652877000E297FC /* Cafe24-AmiiboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11A621162652877000E297FC /* Build configuration list for PBXNativeTarget "Cafe24-AmiiboTests" */;
+			buildPhases = (
+				11A6210B2652877000E297FC /* Sources */,
+				11A6210C2652877000E297FC /* Frameworks */,
+				11A6210D2652877000E297FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11A621152652877000E297FC /* PBXTargetDependency */,
+			);
+			name = "Cafe24-AmiiboTests";
+			productName = "Cafe24-AmiiboTests";
+			productReference = 11A6210F2652877000E297FC /* Cafe24-AmiiboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11A6206E2652367700E297FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					11A620752652367700E297FC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					11A6210E2652877000E297FC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 11A620752652367700E297FC;
+					};
+				};
+			};
+			buildConfigurationList = 11A620712652367700E297FC /* Build configuration list for PBXProject "Cafe24-Amiibo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11A6206D2652367700E297FC;
+			productRefGroup = 11A620772652367700E297FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11A620752652367700E297FC /* Cafe24-Amiibo */,
+				11A6210E2652877000E297FC /* Cafe24-AmiiboTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11A620742652367700E297FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A620862652367900E297FC /* LaunchScreen.storyboard in Resources */,
+				11A620832652367900E297FC /* Assets.xcassets in Resources */,
+				11A620FC265271A900E297FC /* SearchOnGoogleViewController.xib in Resources */,
+				11A621092652807700E297FC /* .swiftlint.yml in Resources */,
+				11A620812652367700E297FC /* Main.storyboard in Resources */,
+				11A620E726524FAE00E297FC /* CharacterCell.xib in Resources */,
+				11A620F32652666C00E297FC /* CharacterImageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11A6210D2652877000E297FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11A6210426527CE800E297FC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		84AF62E41B674209198C93C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cafe24-Amiibo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11A620722652367700E297FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A620FB265271A900E297FC /* SearchOnGoogleViewController.swift in Sources */,
+				11A6207E2652367700E297FC /* ViewController.swift in Sources */,
+				11A6207A2652367700E297FC /* AppDelegate.swift in Sources */,
+				11A620962652399400E297FC /* Parser.swift in Sources */,
+				11A620E626524FAE00E297FC /* CharacterCell.swift in Sources */,
+				11A620F22652666C00E297FC /* CharacterImageViewController.swift in Sources */,
+				11A6207C2652367700E297FC /* SceneDelegate.swift in Sources */,
+				11A620EC265262F900E297FC /* UIImage+Download.swift in Sources */,
+				11A620912652384800E297FC /* Character.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11A6210B2652877000E297FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A621122652877000E297FC /* Cafe24_AmiiboTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11A621152652877000E297FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11A620752652367700E297FC /* Cafe24-Amiibo */;
+			targetProxy = 11A621142652877000E297FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11A6207F2652367700E297FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11A620802652367700E297FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11A620842652367900E297FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11A620852652367900E297FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11A620882652367900E297FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11A620892652367900E297FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11A6208B2652367900E297FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176C2E963D9FC74EC012CCD0 /* Pods-Cafe24-Amiibo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AG6G2N4Y4;
+				INFOPLIST_FILE = "Cafe24-Amiibo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffumandap.amiibo.Cafe24-Amiibo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11A6208C2652367900E297FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186D78F26D7AB8B62CE47CE4 /* Pods-Cafe24-Amiibo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AG6G2N4Y4;
+				INFOPLIST_FILE = "Cafe24-Amiibo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffumandap.amiibo.Cafe24-Amiibo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11A621172652877000E297FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AG6G2N4Y4;
+				INFOPLIST_FILE = "Cafe24-AmiiboTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffumandap.amiibo.Cafe24-AmiiboTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cafe24-Amiibo.app/Cafe24-Amiibo";
+			};
+			name = Debug;
+		};
+		11A621182652877000E297FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AG6G2N4Y4;
+				INFOPLIST_FILE = "Cafe24-AmiiboTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeffumandap.amiibo.Cafe24-AmiiboTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cafe24-Amiibo.app/Cafe24-Amiibo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11A620712652367700E297FC /* Build configuration list for PBXProject "Cafe24-Amiibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11A620882652367900E297FC /* Debug */,
+				11A620892652367900E297FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11A6208A2652367900E297FC /* Build configuration list for PBXNativeTarget "Cafe24-Amiibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11A6208B2652367900E297FC /* Debug */,
+				11A6208C2652367900E297FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11A621162652877000E297FC /* Build configuration list for PBXNativeTarget "Cafe24-AmiiboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11A621172652877000E297FC /* Debug */,
+				11A621182652877000E297FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11A6206E2652367700E297FC /* Project object */;
+}
