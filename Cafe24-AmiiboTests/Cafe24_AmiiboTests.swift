@@ -10,21 +10,24 @@ import UIKit
 @testable import Cafe24_Amiibo
 
 class Cafe24AmiiboTests: XCTestCase {
-    func test() {
-        var helloWorld: String?
-        XCTAssertNil(helloWorld)
-        helloWorld = "Hello World"
-        XCTAssertEqual(helloWorld, "Hello World")
+    var parser: Parser!
+    var character = [Character]()
+    override func setUp() {
+        super.setUp()
+        parser = Parser()
     }
-    
-    //func verifyUrl (urlString: String?) -> Bool {
-    func verifyUrl() {
-        
-//        if let urlString = urlString {
-//            if let url = NSURL(string: urlString) {
-//                return UIApplication.shared.canOpenURL(url as URL)
-//            }
-//        }
-//        return false
+    override func tearDown() {
+        super.tearDown()
+        parser = nil
+        character = []
+    }
+    func is_image_valid_url() throws {
+        let parsed = parser.verifyUrl(urlString: "https://www.google.com")
+        XCTAssertTrue(parsed)
+    }
+    func is_image_downloaded() throws {
+        let image = UIImageView()
+        image.imageFromServerURL(urlString: "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000100-00190002.png")
+        XCTAssertNotNil(image.image)
     }
 }

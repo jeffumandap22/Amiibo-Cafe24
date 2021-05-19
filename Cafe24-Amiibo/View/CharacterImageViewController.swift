@@ -11,6 +11,7 @@ class CharacterImageViewController: UIViewController {
 
     @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet weak var back: UIButton!
+    var parser: Parser!
 
     var character: Character?
 
@@ -22,7 +23,9 @@ class CharacterImageViewController: UIViewController {
 
     func setData(data: Character) {
         self.character = data
-        self.characterImage.imageFromServerURL(urlString: data.image)
+        if parser.verifyUrl(urlString: data.image) {
+            self.characterImage.imageFromServerURL(urlString: data.image)
+        }
     }
 
     @IBAction func backTapped(_ sender: UIButton) {
@@ -30,4 +33,3 @@ class CharacterImageViewController: UIViewController {
     }
 
 }
-

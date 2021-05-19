@@ -39,6 +39,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     func imageViewTapped(data: Character) {
         let view =  CharacterImageViewController()
         view.character = data
+        view.parser = parser
         view.modalPresentationStyle = .fullScreen
         view.modalTransitionStyle = .coverVertical
         self.present(view, animated: true, completion: nil)

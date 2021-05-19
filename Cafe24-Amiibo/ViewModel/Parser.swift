@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+
 struct Parser {
     
     func parse(completion: @escaping ([Character]) -> Void) {
@@ -25,6 +27,15 @@ struct Parser {
             }
             
         }.resume()
+    }
+    
+    func verifyUrl(urlString: String?) -> Bool {
+        if let urlString = urlString {
+            if let url = NSURL(string: urlString) {
+                return UIApplication.shared.canOpenURL(url as URL)
+            }
+        }
+        return false
     }
     
 }
